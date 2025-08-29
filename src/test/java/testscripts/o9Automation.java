@@ -16,7 +16,7 @@ public class o9Automation {
     @Parameters({"browserName", "platformName"})
     public void setUp(@Optional("chrome")String browserName, @Optional("windows")String platformName) {
         // ✅ call BrowserFactory
-        driver = BrowserFactory.openBrowser(browserName, platformName);
+        driver = BrowserFactory.openBrowser(browserName, platformName); //
     }
 
     @Test(description = "Verify Facebook login page", priority = 1, enabled = true, groups ={"smoke"})
