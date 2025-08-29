@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="O9 Automation Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="helpers.RetryListener"/>
+    </listeners>
+    <test name="Target Setting Test In Chrome">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="platformName" value="windows"></parameter>
+        <classes>
+            <class name="testscripts.o9Automation"/>
+        </classes>
+    </test>
+
+
+    <test name="Target Setting Test In Edge">
+        <parameter name="browserName" value="edge"></parameter>
+        <parameter name="platformName" value="windows"></parameter>
+        <classes>
+            <class name="testscripts.o9Automation"/>
+        </classes>
+    </test>
+
+</suite>
