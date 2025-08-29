@@ -12,7 +12,7 @@ public class ConfigReader {
 	private static Properties properties;
 
     static {
-        properties = new Properties();
+        properties = new Properties(); //
         try (InputStream input = new FileInputStream("C:\\Users\\Lenovo\\Desktop\\TestAutomation\\SeleniumTest\\src\\com\\fastlink\\propertyFile\\config.properties")) {
             properties.load(input);
         } catch (IOException e) {

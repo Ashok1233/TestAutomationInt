@@ -8,12 +8,12 @@ import Config.ConfigReader;
 
 import helpers.BrowserFactory;
 
-public class o9Automation {
+public class O9Automation {
 
     WebDriver driver;
 
     @BeforeTest(alwaysRun = true)
-    @Parameters({"browserName", "platformName"})
+    @Parameters({"browserName", "platformName"}) //
     public void setUp(@Optional("chrome")String browserName, @Optional("windows")String platformName) {
         // ✅ call BrowserFactory
         driver = BrowserFactory.openBrowser(browserName, platformName);

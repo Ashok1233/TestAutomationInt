@@ -8,7 +8,7 @@
         <parameter name="browserName" value="chrome"></parameter>
         <parameter name="platformName" value="windows"></parameter>
         <classes>
-            <class name="testscripts.o9Automation"/>
+            <class name="testscripts.O9Automation"/>
         </classes>
     </test>
 
@@ -17,7 +17,7 @@
         <parameter name="browserName" value="edge"></parameter>
         <parameter name="platformName" value="windows"></parameter>
         <classes>
-            <class name="testscripts.o9Automation"/>
+            <class name="testscripts.O9Automation"/>
         </classes>
     </test>
 
